@@ -13,31 +13,36 @@
   <main class="page">
     <section class="hero">
       <div class="hero__content">
-        <p class="eyebrow">Research notes • ideas • babble</p>
+        <p class="">Research notes • ideas • babble</p>
         <h1>Elicia Ye</h1>
         <p>
           currently integrating ML in SW @ HW company.<br>
           formerly @ cal {machine learning, information flow, model compression}.
         </p>
-        <div class="links">
-          <a href="mailto:eliciaye@gmail.com">Email</a>
-          <a href="https://www.linkedin.com/in/eliciaye/">LinkedIn</a>
+        <div class="links" aria-label="Contact links">
+          <a href="mailto:eliciaye@gmail.com" aria-label="Email">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M20 4H4C2.9 4 2 4.9 2 6v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2Zm0 2-8 5-8-5h16Zm-16 12V8l8 5 8-5v10H4Z"/>
+            </svg>
+          </a>
+          <a href="https://www.linkedin.com/in/eliciaye/" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M19 0H5C2.238 0 0 2.238 0 5v14c0 2.762 2.238 5 5 5h14c2.762 0 5-2.238 5-5V5c0-2.762-2.238-5-5-5zM7.5 19H4.5V9h3v10zm-1.5-11.25c-.966 0-1.75-.784-1.75-1.75S5.034 4.25 6 4.25s1.75.784 1.75 1.75S6.966 7.75 6 7.75zM20 19h-3V13.5c0-1.378-.265-2.5-1.75-2.5-1.75 0-2 1.375-2 2.438V19h-3V9h2.875v1.375h.041c.4-.75 1.375-1.375 2.833-1.375C19.5 8.999 20 10.688 20 12.75V19z"/>
+            </svg>
+          </a>
         </div>
       </div>
       <img src="images/pfp.jpg" alt="Elicia Ye" class="profile-photo">
     </section>
 
     <section class="posts">
-      <!-- <div class="posts__header">
-        <h2>Recent post</h2>
-        <p>One note, collected here in a simple home for ideas.</p>
-      </div> -->
-
-      <article class="post-card">
-        <div class="post-meta">May 2023</div>
-        <h3>Why layer-wise views help us understand Deep Models</h3>
-        <p>Tracking and fine-tuning layerwise information flow clarify translation quality and classifier behavior.</p>
-      </article>
+      <a class="post-card-link" href="post-layerwise-views.html">
+        <article class="post-card">
+          <div class="post-meta">May 2023</div>
+          <h3>Why layer-wise views help us understand Deep Models</h3>
+          <p>Tracking and fine-tuning layerwise information flow clarify translation quality and classifier behavior.</p>
+        </article>
+      </a>
     </section>
   </main>
 </body>
