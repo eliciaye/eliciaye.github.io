@@ -252,7 +252,72 @@ h1 {
   margin-bottom: 0;
 }
 
+.postmortem {
+  margin: 0 0 24px;
+  padding: 18px;
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  background: rgba(125, 211, 252, 0.06);
+}
+
+.postmortem h2 {
+  margin: 0 0 8px;
+  font-size: 1rem;
+  color: var(--text);
+}
+
+.postmortem p {
+  margin: 0;
+  color: var(--muted);
+}
+
+.pros-cons {
+  margin: 8px 0 24px;
+}
+
+.pros-cons__card {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  padding: 18px;
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  background: linear-gradient(135deg, rgba(125, 211, 252, 0.08), rgba(77, 85, 255, 0.08));
+}
+
+.pros-cons__column h2 {
+  margin: 0 0 10px;
+  font-size: 1rem;
+  color: var(--text);
+}
+
+.pros-cons__list {
+  margin: 0;
+  padding-left: 1.1rem;
+  color: var(--muted);
+}
+
+.pros-cons__list li {
+  margin-bottom: 8px;
+}
+
+.pros-cons__list li:last-child {
+  margin-bottom: 0;
+}
+
+.pros-cons__list.pros li::marker {
+  color: #4ade80;
+}
+
+.pros-cons__list.cons li::marker {
+  color: #fda4af;
+}
+
 @media (max-width: 700px) {
+  .pros-cons__card {
+    grid-template-columns: 1fr;
+  }
+
   .hero {
     grid-template-columns: 1fr;
   }

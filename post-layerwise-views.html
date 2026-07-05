@@ -13,14 +13,44 @@
       <p class="article-meta">May 2023</p>
       <h1>Why layer-wise views help us understand Deep Models</h1>
       <p>
-        How information moves through a network, and by how much at each stage.
         Instead of treating a model as a black box transformation, we examine the system in stages
-        to be compared and tuned.
+        to be compared and tuned e.g. How information moves through a network, and by how much at each stage.
       </p>
       <p>
         This perspective helps us improve performance while maintaining both interpretability and abstraction.
-        Our work then reduces to finding the balance between the two, informed by the correct measurement of the correct matrix division (per-layer, per-channel per-weight).
+        Our work then reduces to finding the balance between the two, informed by the correct measurement of the correct matrix division (per-{layer, channel, weight}).
       </p>
+
+      <section class="pros-cons" aria-label="Pros and cons">
+        <div class="pros-cons__card">
+          <div class="pros-cons__column">
+            <h2>Temperature high: &darr; Overfitting</h2>
+            <ul class="pros-cons__list pros">
+              <li>&darr; iterations</li>
+              <li>&darr; batch size (amount of overall update)</li>
+              <li>&darr; learning rigot and aggression</li>
+              <li>&uarr; LR</li>
+              <li>&uarr; noise</li>
+            </ul>
+          </div>
+          <div class="pros-cons__column">
+            <h2>Load high (small &alpha;)</h2>
+            <ul class="pros-cons__list cons">
+              <li>Trained well, learned much information</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="postmortem" aria-label="Postmortem">
+        <h2>Postmortem</h2>
+        <p>
+          The remainder of this research was carried out and eventually published by latest additions of a rebuilt team following my departure. I credit the origins of this body of work to my talented senior researches and collaborators.
+        </p>
+      </section>
+
+      <br>
+      
       <img src="images/augprune.png" alt="AugPrune visualization" class="article-image">
     </article>
   </main>
